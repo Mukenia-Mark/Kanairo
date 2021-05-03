@@ -1,0 +1,45 @@
+
+
+import java.util.Objects;
+
+public class Locations {
+    private String busName;
+    private String busStage;
+    private int cost;
+
+
+    //constructor
+    public Locations(String busName, String busStage, int cost){
+        this.busName = busName;
+        this.busStage = busStage;
+        this.cost = cost;
+    }
+
+    //getter methods
+    public String getBusName() {
+        return busName;
+    }
+
+    public String getBusStage(){
+        return busStage;
+    }
+
+    public int getCost() {
+        return cost;
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Locations locations = (Locations) o;
+        return cost == locations.cost && busName.equals(locations.busName) && busStage.equals(locations.busStage);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(busName, busStage, cost);
+    }
+
+}

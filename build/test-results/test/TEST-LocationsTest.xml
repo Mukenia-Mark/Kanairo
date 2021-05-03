@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="LocationsTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2021-05-03T17:33:20" hostname="Aringoprobook" time="0.028">
+  <properties/>
+  <testcase name="locations_canGetBusNameCorrectly_KBS()" classname="LocationsTest" time="0.023"/>
+  <testcase name="locations_canGetCostCorrectly_60()" classname="LocationsTest" time="0.001"/>
+  <testcase name="locations_canInstantiateCorrectly_boolean()" classname="LocationsTest" time="0.001"/>
+  <testcase name="locations_canGetBusStageCorrectly_KenCom()" classname="LocationsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
