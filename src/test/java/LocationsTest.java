@@ -15,7 +15,7 @@ class LocationsTest {
     }
 
     private Locations newLocation() {
-        return new Locations("KBS","KenCom",50);
+        return new Locations("West","KenCom","KBS",50);
     }
 
     @Test
@@ -37,7 +37,13 @@ class LocationsTest {
     }
 
     @Test
-    public void locations_canGetCostCorrectly_60() {
+    public void locations_canGetLocationCorrectly_west() {
+        Locations locations = newLocation();
+        assertEquals("West",locations.getLocation());
+    }
+
+    @Test
+    public void locations_canGetCostCorrectly_50() {
         Locations locations = newLocation();
         assertEquals(50,locations.getCost());
     }

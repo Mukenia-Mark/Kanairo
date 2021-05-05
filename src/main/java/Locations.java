@@ -3,19 +3,29 @@
 import java.util.Objects;
 
 public class Locations {
+    private String location;
     private String busName;
     private String busStage;
     private int cost;
 
 
     //constructor
-    public Locations(String busName, String busStage, int cost){
+    public Locations(String location, String busStage, String busName, int cost){
+        this.location = location;
         this.busName = busName;
         this.busStage = busStage;
         this.cost = cost;
     }
 
     //getter methods
+
+    public String setLocation() {
+        return location;
+    }
+
+    public String getLocation() {
+        return location;
+    }
     public String getBusName() {
         return busName;
     }
