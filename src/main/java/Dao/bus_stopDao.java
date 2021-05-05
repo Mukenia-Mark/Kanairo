@@ -12,6 +12,7 @@ public interface bus_stopDao {
   
   //Read
   bus_stop findByLocation(String location);
+  List<bus_stop> getAllBus_Stops(String location);
   
   //Update
   void update(String bus_sacco_name, String location, int price);

@@ -5,7 +5,6 @@ import org.sql2o.Connection;
 import org.sql2o.Sql2o;
 import org.sql2o.Sql2oException;
 
-import javax.xml.stream.Location;
 import java.util.List;
 
 public class Sql2obus_stopDao implements bus_stopDao{
@@ -74,6 +73,15 @@ public class Sql2obus_stopDao implements bus_stopDao{
         .executeUpdate();
     } catch (Sql2oException ex){
       System.out.println(ex);
+    }
+  }
+  
+  @Override
+  public List<bus_stop> getAllBus_Stops(String location) {
+    try(Connection con = sql2o.open()){
+      return con.createQuery("SELECT * FROM stops WHERE location = :location")
+        .addParameter("location", location)
+        .executeAndFetch(bus_stop.class);
     }
   }
 }

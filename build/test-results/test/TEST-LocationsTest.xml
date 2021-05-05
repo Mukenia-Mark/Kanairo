@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LocationsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-05T07:55:02" hostname="Aringoprobook" time="0.019">
-  <properties/>
-  <testcase name="locations_canGetLocationCorrectly_west()" classname="LocationsTest" time="0.019"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

@@ -1,2 +1,6 @@
+models/bus_stopTest.java
+ models.bus_stopTest
+Dao/Sql2obus_stopDaoTest.java
+ Dao.Sql2obus_stopDaoTest
 LocationsTest.java
  LocationsTest
